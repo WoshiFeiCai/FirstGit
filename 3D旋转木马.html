@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.sec{
+				width:210px;
+				height: 140px;
+				position: relative;
+				perspective: 1000px;
+				margin-left: 400px;	
+				margin-top: 100px;			
+			}
+			.sec #box{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				transition:transform 20s;
+				transform-style:preserve-3d ;
+			}
+			.sec #box figure{
+				margin: 0;
+				display: block;
+				position: absolute;
+				width: 100px;
+				height: 116px;
+				left: 10px;
+				top: 10px;
+				border: 2px solid black;
+				font-size: 90px;
+				font-family:"楷体";
+			}
+			.sec #box figure:nth-child(1){transform: rotateY(0deg)translateZ(288px);background: red;opacity: 0.9;}
+			.sec #box figure:nth-child(2){transform: rotateY(40deg)translateZ(288px);background: green;opacity: 0.9;}
+			.sec #box figure:nth-child(3){transform: rotateY(80deg)translateZ(288px);background: blue;opacity: 0.9;}
+			.sec #box figure:nth-child(4){transform: rotateY(120deg)translateZ(288px);background: yellow;opacity: 0.9;}
+			.sec #box figure:nth-child(5){transform: rotateY(160deg)translateZ(288px);background: yellowgreen;opacity: 0.9;}
+			.sec #box figure:nth-child(6){transform: rotateY(200deg)translateZ(288px);background: deepskyblue;opacity: 0.9;}
+			.sec #box figure:nth-child(7){transform: rotateY(240deg)translateZ(288px);background: greenyellow;opacity: 0.9;}
+			.sec #box figure:nth-child(8){transform: rotateY(280deg)translateZ(288px);background: brown;opacity: 0.9;}
+			.sec #box figure:nth-child(9){transform: rotateY(320deg)translateZ(288px);background: pink;opacity: 0.9;}
+			.sec #box:hover{
+				transform: rotateY(-720deg);
+			}
+		</style>
+	</head>
+	<body>
+		<section class="sec">
+			<div id="box">
+				<figure>赵</figure>
+				<figure>丹</figure>
+				<figure>丹</figure>
+				<figure>大</figure>
+				<figure>傻</figure>
+				<figure>叉</figure>
+				<figure>不</figure>
+				<figure>是</figure>
+				<figure>人</figure>
+			</div>
+		</section>
+	</body>
+</html>
